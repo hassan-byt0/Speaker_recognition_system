@@ -1,0 +1,6 @@
+pandas
+torchaudio
+transformers
+torch
+scikit-learn
+torchmetrics
