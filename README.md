@@ -104,22 +104,22 @@ The model will be evaluated based on the following criteria:
 
 ### Challenges Faced
 
-* Handling variations in audio quality and background noise.
-* Ensuring the model generalizes well to unseen speakers.
+* Handling variations in audio quality and background noise and understanding waveform dimensions while applying the model.
+* Addition of the Dataset for managing dataset results in the addition of '/Dataset' before the 'fdir path' column value of test and train .csv files.
 * Optimizing the model for better accuracy and F1 score.
-
+  
 ### Additional Features
 
 * Implemented Wav2vec2 pre-trained model for feature extraction by comparing waveforms as embeddings.
 <!--* Used advanced preprocessing methods to enhance feature extraction.-->
-* Dockerized the speaker recognition system by building a Docker image.
+* Dockerized the speaker recognition system by building a Docker image container.
 
 ### Additional Comments
 
 * Utilized the torchaudio model pre-trained Wav2vec2 model, which showcases significant improvements in terms of accuracy and F1 score. We can implement different open-source audio recognition models from Hugging Face models or other platforms.
 * Attempted hyperparameter tuning by introducing training arguments from torch methods, but due to time constraints, it was not fully implemented.
+* Need to perform data augmentation as we required more data for the model to be generalized.
 * Utilized the Lightning.ai cloud platform in a Visual Studio setting as it provides vast computational power and is easy to use.
-
 
 
 ### License
