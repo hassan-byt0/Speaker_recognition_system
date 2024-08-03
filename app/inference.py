@@ -1,5 +1,3 @@
-# inference.py
-
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.metrics import accuracy_score, f1_score
 
