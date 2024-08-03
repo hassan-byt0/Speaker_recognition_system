@@ -1,5 +1,3 @@
-# main.py
-
 import pandas as pd
 from data_processing import load_data
 from model import get_embeddings, train_model
@@ -25,31 +23,31 @@ def main():
     print(f"F1 Score: {f1}")
 
     # Prepare training arguments
-    training_args = TrainingArguments(
-        output_dir='./results',
-        num_train_epochs=3,
-        per_device_train_batch_size=16,
-        per_device_eval_batch_size=16,
-        warmup_steps=500,
-        weight_decay=0.01,
-        logging_dir='./logs',
-        logging_steps=10,
-    )
+    #training_args = TrainingArguments(
+     #   output_dir='./results',
+      #  num_train_epochs=3,
+       # per_device_train_batch_size=16,
+        #per_device_eval_batch_size=16,
+        #warmup_steps=500,
+        #weight_decay=0.01,
+        #logging_dir='./logs',
+        #logging_steps=10,
+    #)
 
     # Prepare the Trainer
-    trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=train_df,
-        eval_dataset=test_df
-    )
+   # trainer = Trainer(
+    #    model=model,
+     #   args=training_args,
+      #  train_dataset=train_df,
+       # eval_dataset=test_df
+    #)
 
     # Train the model
-    trainer.train()
+   # trainer.train()
 
     # Evaluate the model
-    metrics = trainer.evaluate()
-    print(metrics)
+    #metrics = trainer.evaluate()
+    #print(metrics)
 
 if __name__ == "__main__":
     main()
