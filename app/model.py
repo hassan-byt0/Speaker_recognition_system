@@ -1,5 +1,3 @@
-# model.py
-
 import torch
 import torchaudio
 from transformers import Wav2Vec2Model, Wav2Vec2Processor
