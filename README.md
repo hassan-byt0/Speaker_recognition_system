@@ -21,7 +21,7 @@ speaker-recognition
 │   ├── test.csv
 |   |── test
 |   |── train
-├── src
+├── app
 │   ├── __init__.py
 │   ├── data_processing.py
 │   ├── model.py
@@ -29,8 +29,7 @@ speaker-recognition
 │   ├── main.py
 |   ├── requirements.txt
 ├── Dockerfile
-├── README.md
-└── report.md
+└──  README.md
 ```
 
 ### Files Description
@@ -56,6 +55,12 @@ speaker-recognition
 ```sh
 git clone https://github.com/hassan-byt0/Speaker_recognition_system.git
 cd speaker-recognition
+```
+
+#### Download the requirements.txt
+
+```sh
+!pip download -r <path_to your_requirements.txt>
 ```
 
 #### Building the Docker Image
