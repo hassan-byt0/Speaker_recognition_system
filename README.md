@@ -53,14 +53,14 @@ speaker-recognition
 #### Cloning the Repository
 
 ```sh
-git clone https://github.com/hassan-byt0/Speaker_recognition_system.git
+git clone https://github.com/hassan-byt0/Speaker_recognition_system
 cd speaker-recognition
 ```
 
 #### Download the requirements.txt
 
 ```sh
-!pip download -r <path_to your_requirements.txt>
+pip download -r <path_to your_requirements.txt>
 ```
 
 #### Building the Docker Image
@@ -99,7 +99,8 @@ The model will be evaluated based on the following criteria:
 
 * **Accuracy**: Proportion of correctly identified speakers.
 * **F1 Score**: Harmonic mean of precision and recall.
-* **Dockerising the packages management**: Dockerise the speaker recognition system by building docker image id.
+* **Current Accuracy and F1 Score:** Accuracy: 0.1699 (17%), F1 Score: 0.1756 (17.6%)
+<!--* **Dockerising the packages management**: Dockerise the speaker recognition system by building docker image id.-->
 
 ### Challenges Faced
 
@@ -110,11 +111,16 @@ The model will be evaluated based on the following criteria:
 ### Additional Features
 
 * Implemented Wav2vec2 pre-trained model for feature extraction by comparing waveforms as embeddings.
-* Used advanced preprocessing methods to enhance feature extraction.
+<!--* Used advanced preprocessing methods to enhance feature extraction.-->
+* Dockerized the speaker recognition system by building a Docker image.
 
-### Contributing
+### Additional Comments
 
-Feel free to open issues or submit pull requests for improvements or bug fixes.
+* Utilized the torchaudio model pre-trained Wav2vec2 model, which showcases significant improvements in terms of accuracy and F1 score. We can implement different open-source audio recognition models from Hugging Face models or other platforms.
+* Attempted hyperparameter tuning by introducing training arguments from torch methods, but due to time constraints, it was not fully implemented.
+* Utilized the Lightning.ai cloud platform in a Visual Studio setting as it provides vast computational power and is easy to use.
+
+
 
 ### License
 
